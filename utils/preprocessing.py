@@ -19,12 +19,6 @@ def data_filter(df):
     return df
 
 
-def is_time(time, last_time, delta):
-    if (time <= last_time) and (time > last_time - delta):
-        return True
-    return False
-
-
 def get_data(df, last_time, delta):
     """
     获取某段时间的新闻数据
